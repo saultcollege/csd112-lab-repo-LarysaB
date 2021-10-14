@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSD112-Larysa Bordiuh</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Larysa Bordiuh">
+    <meta name="description" content="Lab 2 CSD112 student of Sault College Larysa Bordiuh"><!-- <p>Found me!</p> -->
+    <link rel="icon" href="./images/favicon_package_v0.16/favicon.ico">
+</head>
+
+<body lang="EN">
+    <div class="width-wrap">
+        <header id="top">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="links.html">Links</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Survey</h1>
+            <form target="_blank" action="https://formspree.io/f/xyylagjj" method="post">
+                <ul>
+                    <li>
+                        <label for="name"></label>
+                        <p>What is your name&#63;<abbr title="required" aria-label="required">*</abbr>
+                            <input type="text" id="name" name="name_field">
+                        </p>
+                    </li>
+                    <li>
+                        <label for="mail"></label>
+                        <p>What is your email&#63;<abbr title="required" aria-label="required">*</abbr>
+                            <input type="email" id="mail" name="email_field">
+                        </p>
+                    </li>
+                    <li>
+                        <label for="number"></label>
+                        <p>Which whole number is best&#63;
+                            <input type="number" id="number" name="best_whole_number" min="0">
+                        </p>
+                    </li>
+                    <li>
+                        <label for="date"></label>
+                        <p>Which day is best&#63;
+                            <input type="date" id="date" name="best_day">
+                        </p>
+                    </li>
+                    <li>
+                        <label for="text"></label>
+                        <p>Which bear is best&#63;<abbr title="required" aria-label="required">*</abbr>
+                            <select id="text" name="best_bear">
+                                <option value="">&nbsp;</option>
+                                <option value="black">Black</option>
+                                <option value="brown">Brown</option>
+                                <option value="care">Care</option>
+                                <option value="panda">Panda</option>
+                                <option value="polar">Polar</option>
+                                <option value="teddy">Teddy</option>
+                            </select>
+                        </p>
+                    </li>
+                </ul>
+                <fieldset>
+                    <legend>Do you like radio buttons&#63;</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="radio_button" value="Yes" id="yes">
+                            <label for="yes">Yes</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio_button" value="No" id="no"><label for="no">No</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio_button" value="None of your business"
+                                id="none_of_your_business" checked>
+                            <label for="none_of_your_business">None of your business</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <ul>
+                    <li>
+                        <label for="msg">What is the meaning of life&#63;</label>
+                        <textarea cols="50" rows="5" id="msg"
+                            name="life_meaning">Enter the correct answer here&#58;</textarea>
+                    <li>
+                        <p>click here&#8658;<button>Send</button></p>
+                    </li>
+                </ul>
+            </form>
+        </main>
+        <footer>
+            <hr>
+            <blockquote>
+                "Work hard to get what you like, otherwise you'll be forced to just like what you get."<br>
+                <cite>
+                    &mdash;<span class="author">Bernard Shaw</span>
+                </cite>
+            </blockquote>
+            <p>
+                &#169; 2021<a href="mailto:lara.bordug@gmail.com?subject=Message%20from%20CSD112%20Website">Larysa
+                    Bordiuh</a>
+            </p>
+            <img srcset="images/sc-logo/sc-logo.png,
+                       images/sc-logo/sc-logo@1.5x.png 1.5x,
+                       images/sc-logo/sc-logo@2x.png 2x" src="images/sc-logo/sc-logo.png" alt="Saoult College log">
+            <picture>
+                <source type="image/svg+xml" srcset="images/sc-logo/sc-logo.svg">
+                <img src="images/sc-logo/sc-logo.png" alt="Saoult College log" width="70">
+            </picture>
+        </footer>
+        <a href="#top" title="Back to top">◤</a>
+    </div>
+</body>
+
+</html>
