@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+}
+  *, *::before, *::after {
+    box-sizing: inherit;   /* определяет размер всех элементов относительно их рамки вместо рамки содержимого по умолчанию*/
+}
+
+.width-wrap {
+    max-width: 960px;      /*максимальная ширина элемента div с классом width-wrap*/
+    margin-left: auto;     /*техника автоматического поля*/
+    margin-right: auto;     /*техника автоматического поля*/
+    margin-bottom: 3em;     /*пространство между нижней частью width-wrap и нижней частью тела.*/
+    padding-left: 2em;      /*отступ к левой стороне элемента width-wrap*/ 
+    padding-right: 2em;     /*отступ к правой стороне элемента width-wrap*/ 
+    padding-bottom: 2em;    /*отступ к нижней стороне элемента width-wrap*/ 
+    border: 1px solid #00000003; /*1 pixel wide,solid, black, with an alpha value of 0.3*/
+    border-top: none;        /*нет верхней границы*/
+    background-color: peachpuff ;  /*?????????*/
+}
+
+#top ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#top li {
+    float: left; 
+    margin-top: 2px;
+}
+
+#top li a {
+    display: block;
+    color: rgb(8, 131, 246);
+    text-align: center;
+    padding: 16px;
+}
+#top li a:hover {
+    border-top: 4px solid rgb(8, 131, 246); /*???????*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
+    /* background-color: #f60a592c; */
+}
+
+hr {
+    width: 0.5vw;    /*ширина вдвое меньше ширины области просмотра*/
+    max-width: 890px; /*но не более*/
+    min-width: 300px;   /*но не менее*/
+    margin-top: 3em;    /*верхнее поле*/
+    margin-bottom: 2em; /*нижнее поле*/
+    border: none; /*очистка границы по умолчанию*/
+    border-bottom: dotted 3px rgb(210, 105, 30) /*нижняя пунктирная граница*/
+}
+body {
+    background-color: rgba(9, 243, 165, 0.178);
+    color: rgb(63, 1, 1);    /*не уверена п.3.4*/
+}
+h1, h2, h3 {
+    color: rgb(210, 105, 30); /*не уверена п.3.5*/
+}
+
+dt:after {
+    content: ":"; /* Добавляем после элемента термина в списке определений ???????? */
+}
+dt {
+    font-weight: bold; /*Жирный шрифт*/
+}
+
+table, td, th {
+    padding-top: 0.3em;   
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+thead, tfoot, tbody th {
+    background-color: rgb(0, 0, 0, 0.2);
+} 
+td {
+    background-color: rgb(1, 0, 0, 0.05) ;
+}
+tbody tr:nth-child(even) {
+    background-color: rgb(1, 0, 0, 0.15);
+}
+a {
+    color: rgb(6, 173, 159);
+}
+ol {
+    list-style-type: square;
+}
+.editlabel {
+    display: block;
+    position: relative;
+    padding-left: 0px;
+}
+
+.submitbtn {
+    border: none;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color:white;
+    background-color: rgb(210, 105, 30) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
