@@ -1,30 +1,32 @@
 html {
     box-sizing: border-box;
 }
-  *, *::before, *::after {
-    box-sizing: inherit;   /* определяет размер всех элементов относительно их рамки вместо рамки содержимого по умолчанию*/
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 .width-wrap {
-    max-width: 960px;      /*максимальная ширина элемента div с классом width-wrap*/
-    margin-left: auto;     /*техника автоматического поля*/
-    margin-right: auto;     /*техника автоматического поля*/
-    margin-bottom: 3em;     /*пространство между нижней частью width-wrap и нижней частью тела.*/
-    padding-left: 2em;      /*отступ к левой стороне элемента width-wrap*/ 
-    padding-right: 2em;     /*отступ к правой стороне элемента width-wrap*/ 
-    padding-bottom: 2em;    /*отступ к нижней стороне элемента width-wrap*/ 
-    border: 1px solid #00000003; /*1 pixel wide,solid, black, with an alpha value of 0.3*/
-    border-top: none;        /*нет верхней границы*/
-    background-color: peachpuff ;  /*?????????*/
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    border: 1px solid #00000003;
+    border-top: none;
+    background-color: peachpuff;
 }
 
 #top {
-    border-top: 4px solid rgba(0,0,0,0.1);
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
     margin-left: -2em;
     margin-right: -2em;
 }
+
 #top nav {
-    border-bottom: 1px dotted rgba(0,0,0,0.3);
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
     margin-left: 2em;
     margin-right: 2em;
 }
@@ -48,61 +50,70 @@ html {
     margin: -4px 1em 0 1em;
     border-top: 4px solid transparent
 }
+
 #top li a:hover {
-    border-top: 4px solid rgb(8, 131, 246); /*???????*/
-    /* background-color: #f60a592c; */
+    border-top: 4px solid rgb(8, 131, 246);
 }
 
 hr {
-    width: 50vw;    /*ширина вдвое меньше ширины области просмотра*/
-    max-width: 890px; /*но не более*/
-    min-width: 300px;   /*но не менее*/
-    margin-top: 3em;    /*верхнее поле*/
-    margin-bottom: 2em; /*нижнее поле*/
-    border: none; /*очистка границы по умолчанию*/
-    border-bottom: dotted 3px rgb(210, 105, 30) /*нижняя пунктирная граница*/
+    width: 50vw;
+    max-width: 890px;
+    min-width: 300px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: dotted 3px rgb(210, 105, 30)
 }
+
 body {
     background-color: rgba(9, 243, 165, 0.178);
-    color: rgb(63, 1, 1);    /*не уверена п.3.4*/
+    color: rgb(63, 1, 1);
 }
+
 h1, h2, h3 {
-    color: rgb(210, 105, 30); /*не уверена п.3.5*/
+    color: rgb(210, 105, 30);
 }
 
 dt:after {
-    content: ":"; /* Добавляем после элемента термина в списке определений ???????? */
+    content: ":";
 }
+
 dt {
-    font-weight: bold; /*Жирный шрифт*/
+    font-weight: bold;
 }
 
 table, td, th {
-    padding-top: 0.3em;   
+    padding-top: 0.3em;
     padding-bottom: 0.3em;
     padding-left: 1em;
     padding-right: 1em;
 }
+
 thead td, tfoot td, th {
     background-color: rgb(0, 0, 0, 0.2);
-} 
-td {
-    background-color: rgb(1, 0, 0, 0.05) ;
 }
+
+td {
+    background-color: rgb(1, 0, 0, 0.05);
+}
+
 tbody tr:nth-child(even) td {
     background-color: rgb(1, 0, 0, 0.15);
 }
+
 a {
-    color: rgb(6, 173, 159);
+    color: rgb(248, 7, 7);
 }
+
 ol {
     list-style-type: square;
 }
+
 label {
     display: block;
 }
 
-input[type="radio"] + label, input[type="checkbox"] + label {
+input[type="radio"]+label, input[type="checkbox"]+label {
     display: inline;
 }
 
@@ -112,23 +123,96 @@ input[type="radio"] + label, input[type="checkbox"] + label {
     padding-right: 3em;
     padding-top: 1em;
     padding-bottom: 1em;
-    color:white;
-    background-color: rgb(210, 105, 30) ;
+    color: white;
+    background-color: rgb(210, 105, 30);
 }
 
 form :invalid {
-    background-color: #ff000080;
+    background-color: #ff00001a;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans', sans-serif;
+}
 
+body {
+    font-family: 'PT Serif', serif;
+    line-height: 1.3;
+}
 
+a {
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
+}
 
+ol {
+    list-style-type: upper-roman;
+}
 
+iframe {
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
 
+fieldset ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
+#top li a:hover {
+    text-decoration: none;
+}
 
+#top li a {
+    font-weight: bold;
+    font-style: italic;             /*I had italic font style before*/
+    letter-spacing: 4px;
+}
 
+h1 {
+	background: radial-gradient(circle, #03b4ab 0%, #ff4545 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
+.bio {
+    column-count: 3;
+    column-gap: 2em;
+}
 
+table {
+    column-span: all;
+    margin-top: 1em;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
 
+img {
+    max-width: 100%;
+}
+
+.image {
+    padding: 2%;
+    background-color: white;
+    box-shadow: 10px 5px 5px rgb(0, 238, 255);
+}
+
+footer {
+    font-size: 75%;
+    text-align: center;
+}
+a[href="#top"]:hover {
+    text-decoration: none;
+}
+a[href="#top"] {
+    box-shadow:
+    -3px -3px 6px #4e0101;
+}
+
+ 
+ 
