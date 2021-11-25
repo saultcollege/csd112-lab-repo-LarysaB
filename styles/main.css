@@ -48,7 +48,8 @@ html {
     padding-top: 1em;
     padding-bottom: 0.5em;
     margin: -4px 1em 0 1em;
-    border-top: 4px solid transparent
+    border-top: 4px solid transparent;
+    text-transform: uppercase;
 }
 
 #top li a:hover {
@@ -210,7 +211,7 @@ a[href="#top"]:hover {
     text-decoration: none;
 }
 a[href="#top"] {
-    box-shadow:
+    text-shadow:
     -3px -3px 6px #4e0101;
 }
 
