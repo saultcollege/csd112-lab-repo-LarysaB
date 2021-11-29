@@ -27,6 +27,7 @@
                     <li><a href="glossary.html">Glossary</a></li>
                     <li><a href="survey.html">Survey</a></li>
                     <li><a href="lorem.html">Lorem Ipsum</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,8 +35,11 @@
             <h1>Welcome to Larissa’s CSD112 Website!</h1>
             <div class="bio">
                 <a href="images/IMG_Lora.jpg">
-                    <img class="image" src="images/IMG_Lora.jpg" alt="Image of Larysa" sizes="(max-width: 500px) 150px, 300px"
-                        srcset="images/IMG_lORA_150.jpg 150w, images/IMG_lORA_300.jpg 300w" /></a>
+                    <img class="image" src="images/IMG_Lora.jpg" alt="Image of Larysa"
+                        sizes="(max-width: 500px) 150px, 300px"
+                        srcset="images/IMG_lORA_150.jpg 150w, images/IMG_lORA_300.jpg 300w" />
+                    <img class="paperclip" src="images/paperclip.png" alt="Paperclip" />
+                </a>
                 <p>I am Russian, but I have been living in Ukraine for many years.
                     I am currently in Canada studying Computer Programming at Sault College.
                     In Ukraine, I worked at a Nuclear Power Plant as an engineer, but decided to change my profession.
@@ -125,45 +129,73 @@
                 </table>
             </div>
             <h2>My Favourite Things</h2>
-            <figure>
-                <a href="https://www.saultcollege.ca/programs/categories/information-technology-studies/"><img
-                        src="images/logo_IT.jpg" alt="IT"></a>
-                <figcaption>
-                    <i><strong>IT logo</strong></i>
-                </figcaption>
-            </figure>
-            <h3>My Favorite Animals:</h3>
-            <ol>
-                <li>Cats</li>
-                <li>Dogs</li>
-                <li>Horses</li>
-            </ol>
-            <h3>Haiku</h3>
-            <p>
-                Why is it dark now? <br>
-                Is that a cat on my face?<br>
-                Well, I guess that’s.<br>
-                <cite>
-                    by <span class="author">Unknown</span>
-                </cite>
-            </p>
-            <h3>Public Domain Audiobook</h3>
-            <audio controls>
-                <source
-                    src="https://ia601509.us.archive.org/35/items/great_men_and_famous_women_vol_2_2110_librivox/greatmenfamouswomen2_30_horne_128kb.mp3"
-                    type="audio/mp3">
-                <p>Your browser doesn't support HTML5 audio.
-                    <a
-                        href="https://ia601509.us.archive.org/35/items/great_men_and_famous_women_vol_2_2110_librivox/greatmenfamouswomen2_30_horne_128kb.mp3">Download
-                        the audiobook</a> instead.
-                </p>
-            </audio>
-            <h3>YouTube Video</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dmqqdEmBXhA"
-                title="YouTube video player" style="border:0;"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+            <div class="favourites">
+                <input type="radio" name="radio_button" value="IT" id="tab1" checked>
+                <label for="tab1">
+                    <h3>IT</h3>
+                </label>
+                <div>
+                    <figure>
+                        <a href="https://www.saultcollege.ca/programs/categories/information-technology-studies/"><img
+                                src="images/logo_IT.jpg" alt="IT"></a>
+                        <figcaption>
+                            <i><strong>IT logo</strong></i>
+                        </figcaption>
+                    </figure>
+                </div>
+                <input type="radio" name="radio_button" value="My Favorite Animals" id="tab2">
+                <label for="tab2">
+                    <h3>My Favorite Animals</h3>
+                </label>
+                <div>
+                    <ol>
+                        <li>Cats</li>
+                        <li>Dogs</li>
+                        <li>Horses</li>
+                    </ol>
+                </div>
+                <input type="radio" name="radio_button" value="Haiku" id="tab3">
+                <label for="tab3">
+                    <h3>Haiku</h3>
+                </label>
+                <div>
+                    <p>
+                        Why is it dark now? <br>
+                        Is that a cat on my face?<br>
+                        Well, I guess that’s.<br>
+                        <cite>
+                            by <span class="author">Unknown</span>
+                        </cite>
+                    </p>
+                </div>
+                <input type="radio" name="radio_button" value="Audio" id="tab4">
+                <label for="tab4">
+                    <h3>Public Domain Audiobook</h3>
+                </label>
+                <div>
+                    <audio controls>
+                        <source
+                            src="https://ia601509.us.archive.org/35/items/great_men_and_famous_women_vol_2_2110_librivox/greatmenfamouswomen2_30_horne_128kb.mp3"
+                            type="audio/mp3">
+                        <p>Your browser doesn't support HTML5 audio.
+                            <a
+                                href="https://ia601509.us.archive.org/35/items/great_men_and_famous_women_vol_2_2110_librivox/greatmenfamouswomen2_30_horne_128kb.mp3">Download
+                                the audiobook</a> instead.
+                        </p>
+                    </audio>
+                </div>
+                <input type="radio" name="radio_button" value="Video" id="tab5">
+                <label for="tab5">
+                    <h3> YouTube Video</h3>
+                </label>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dmqqdEmBXhA"
+                        title="YouTube video player" style="border:0;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </main>
         <footer>
             <hr>
@@ -174,7 +206,8 @@
                 </cite>
             </blockquote>
             <p>
-                &#169; 2021<a class="mail" href="mailto:lara.bordug@gmail.com?subject=Message%20from%20CSD112%20Website">Larysa
+                &#169; 2021<a class="mail"
+                    href="mailto:lara.bordug@gmail.com?subject=Message%20from%20CSD112%20Website">Larysa
                     Bordiuh</a>
             </p>
             <img srcset="images/sc-logo/sc-logo.png,
