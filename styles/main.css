@@ -216,17 +216,16 @@ div .gallery {
     grid-gap: 10px;
 }
 .gallery .row-span-2 {
-    grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row: span 2;
 }
 .gallery .col-span-2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column: span 2;
 }
 .gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 .gallery a:hover {
     transform: scale(1.1);
@@ -242,11 +241,11 @@ div .gallery {
 }
 .paperclip {
     position: absolute;  
-    right: 0;
-    top: 0;
+    right: -9px;
+    top: -9px;
 }
 a[href="#top"] {
-    margin-left: 25px;
+    margin-left: -25px;
     position: sticky;
     bottom: 10px;
     display: inline-block;
