@@ -308,7 +308,8 @@ a[href="#top"] {
     position: sticky;
     bottom: 10px;
     display: inline-block;
-    transition: 200ms; /* <------- from Lab 8.1.8*/
+    transition: 200ms;
+    /* <------- from Lab 8.1.8*/
 }
 
 a[href="#top"]:hover {
@@ -339,4 +340,34 @@ div .gallery {
     transition: 200ms;
 }
 
+ @media screen and (max-width: 600px) {
+    thead, tfoot, th {
+        display: none;
+    }
 
+    td {
+        display: block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    table {
+        caption-side: top;
+    }
+
+    .top {
+        padding-top: 0.3em;
+        font-weight: bold;
+    }
+
+    .bottom {
+        padding-bottom: 0.3em;
+        font-style: italic;
+        font-size: 0.8em;
+    }
+    .bottom::after {
+        content: "hrs/wk";
+    }
+}
