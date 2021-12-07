@@ -340,7 +340,7 @@ div .gallery {
     transition: 200ms;
 }
 
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     thead, tfoot, th {
         display: none;
     }
@@ -367,7 +367,23 @@ div .gallery {
         font-style: italic;
         font-size: 0.8em;
     }
+
     .bottom::after {
         content: "hrs/wk";
+    }
+}
+
+p .image1 {
+    float: left;
+}
+
+p .image2 {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    p .image1, p .image2 {
+        float: none;
+        display: block;
     }
 }
