@@ -387,3 +387,34 @@ p .image2 {
         display: block;
     }
 }
+
+.favourites div {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .favourites {
+        flex-direction: column;
+    }
+
+    .favourites label {
+        order: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #top ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #top li a {
+        padding-top: 0.5em;
+        border-top: none;
+    }
+
+    #top li a:hover {
+        border-top: none;
+        text-decoration: underline;
+    }
+}
