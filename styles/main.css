@@ -110,7 +110,10 @@ label {
     display: block;
 }
 
-input[type="radio"]+label, input[type="checkbox"]+label {
+.survey-fieldlist label
+
+/*, input[type="checkbox"]+label*/
+    {
     display: inline;
 }
 
@@ -406,6 +409,8 @@ p .image2 {
     #top ul {
         flex-direction: column;
         align-items: center;
+        height: 0;
+        overflow: hidden;
     }
 
     #top li a {
@@ -416,5 +421,53 @@ p .image2 {
     #top li a:hover {
         border-top: none;
         text-decoration: underline;
+    }
+}
+
+.sandwich-icon, #menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .sandwich-icon {
+        display: block;
+        width: 40px;
+        height: 25px;
+        border-top: 5px solid rgb(17, 0, 255);
+        cursor: pointer;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sandwich-icon::after {
+        /*6.4.2 - 6.4.2.5*/
+        content: "";
+        display: block;
+        width: 40px;
+        border-top: 5px solid rgb(17, 0, 255);
+        position: absolute;
+        top: 15px;
+    }
+
+    .sandwich-icon::before {
+        /*6.4.2 - 6.4.2.5*/
+        content: "";
+        display: block;
+        width: 40px;
+        border-top: 5px solid rgb(17, 0, 255);
+        position: absolute;
+        top: 5px;
+    }
+
+    label .sandwich-icon {
+        position: relative;
+
+    }
+
+    input[type=checkbox]:checked+label+ul {
+        height: 400px !important;
+        transition: 200ms;
     }
 }
